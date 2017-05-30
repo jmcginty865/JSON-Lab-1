@@ -35,14 +35,14 @@ window.onload = function()
 		this.height = 20;
 
 		//random colors for our box
-		/*this.r = Math.round(Math.random()*255);
+		this.r = Math.round(Math.random()*255);
 		this.g = Math.round(Math.random()*255);
-		this.b = Math.round(Math.random()*255);*/
+		this.b = Math.round(Math.random()*255);
 
-		this.randomColor = randomInt(0,colorsArray.colors.length-1);
-		this.r = colorsArray.colors[this.randomColor].red;
-		this.g = colorsArray.colors[this.randomColor].green;
-		this.b = colorsArray.colors[this.randomColor].blue;
+		this.randomColor = randomInt(0,colorsArray.length - 1);
+		this.r = colorsArray[this.randomColor];
+		this.g = colorsArray[this.randomColor];
+		this.b = colorsArray[this.randomColor];
 
 		console.log(colorsArray);
 
